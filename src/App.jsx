@@ -28,10 +28,15 @@ const App = () => {
           >
             <Nav.Link href="#action1" style={{color:"#420608", fontWeight:"700"}}>Inicio</Nav.Link>
             <Nav.Link href="#action2" style={{color:"#420608", fontWeight:"700"}}>Sobre nosotros</Nav.Link>
-            <img src="https://res.cloudinary.com/dtit8udfs/image/upload/v1689179893/sennova_vtutcg.png" alt="" style={{width:"20%"}} />
-            <p>Un proyecto de centro de comercio y turismo regional Quindio</p>
+            
           </Nav>
-            <Button style={{backgroundColor:"#420608", border:"solid 2px #420608", height:"8vh", fontWeight:"600"}}>Iniciar sesión</Button>
+            <div style={{display:"flex",flexDirection:"column",width:"48vw",gap:"5px"}}>
+              <div style={{width:"14.5vw",display:"flex", justifyContent:"center"}}>
+              <img src="https://res.cloudinary.com/dtit8udfs/image/upload/v1689179893/sennova_vtutcg.png" alt="" style={{width:"60%"}} />
+              </div>
+              <p style={{overflowWrap:"break-word", width:"15vw", textAlign:"center",fontSize:"110%",fontWeight:"600"}}>Un proyecto de centro de comercio y turismo regional Quindio</p>
+            </div>
+            <Button style={{backgroundColor:"#420608", border:"solid 2px #420608", fontWeight:"600",padding:"10px 24px", fontSize:"120%"}}>Iniciar sesión</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -44,7 +49,7 @@ const App = () => {
       </Carousel.Item>
       <Carousel.Item style={{height:"85vh"}}>
         <img
-          style={{height:"85vh",width:"70vw"}}
+          style={{height:"85vh",width:"70vw",}}
           className="d-block w-100"
           src="https://res.cloudinary.com/dtit8udfs/image/upload/v1689173297/cacao_gb9dgi.jpg"
           alt="First slide"
